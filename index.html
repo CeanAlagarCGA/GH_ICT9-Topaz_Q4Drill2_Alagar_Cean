@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 1</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjzHy0g9UOYLNjm4YnG7YbRBuZLoXAB9F7mw&s");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            width: 300px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background: #00c6ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="button"]:hover {
+            background: #0072ff;
+        }
+
+        #display1 {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+<form>
+    <input type="number" id="kwh_input" placeholder="Enter your electricity consumption in kWh">
+    <input type="button" onclick="compute_kwh()" value="Enter">
+</form>
+
+<div id="display1"></div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
